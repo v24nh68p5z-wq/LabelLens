@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help & Support — Label Lens</title>
+<style>
+  :root {
+    --green: #17493C;
+    --bg: #F7F3EA;
+    --text: #20241F;
+    --text-secondary: #6b6a63;
+    --border: #EAE4D6;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  h1 { font-size: 26px; margin: 0; }
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin: 4px 0 32px;
+  }
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  summary {
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    float: right;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+  details[open] summary::after { content: "–"; }
+  details p {
+    margin: 10px 0 2px;
+    font-size: 14.5px;
+    color: var(--text-secondary);
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--green);
+    color: white;
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-top: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .contact span { opacity: 0.85; font-weight: 400; font-size: 13px; }
+  .nav {
+    font-size: 13.5px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+  .nav a { color: var(--green); text-decoration: none; font-weight: 600; }
+  .nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🔍</div>
+    <h1>Help &amp; Support</h1>
+  </header>
+  <p class="subtitle">Common questions about Label Lens, and how to reach us.</p>
+
+  <details>
+    <summary>How does scanning work?</summary>
+    <p>Point your camera at a barcode or ingredient label. Label Lens looks up the product and checks its ingredients against our risk database, then gives you a clear Avoid, Caution, or Clean verdict.</p>
+  </details>
+
+  <details>
+    <summary>Where does the data come from?</summary>
+    <p>Product and nutrition data comes from Open Food Facts, a free, open grocery database. Ingredient risk flags are researched by us, based on FDA actions, international bans, and published studies — each one includes a plain-language reason.</p>
+  </details>
+
+  <details>
+    <summary>A product isn't found when I scan it</summary>
+    <p>Open Food Facts is community-maintained and doesn't have every product yet. Try one of the demo products on the Scan tab, or switch to Label Photo mode (Pro) to scan the ingredient list directly.</p>
+  </details>
+
+  <details>
+    <summary>How do I cancel my free trial or subscription?</summary>
+    <p>In the app, go to Settings → Manage subscription, or on your iPhone go to Settings → [your name] → Subscriptions → Label Lens → Cancel. Cancel at least 24 hours before your trial ends to avoid being charged.</p>
+  </details>
+
+  <details>
+    <summary>I subscribed but Pro features are still locked</summary>
+    <p>Try Restore Purchases in the app's Settings screen — it re-syncs your subscription status with the App Store. This also helps after reinstalling the app or switching devices.</p>
+  </details>
+
+  <details>
+    <summary>Is my data private?</summary>
+    <p>Yes. Your camera images never leave your device, and your scan history is stored locally, not on a server. See the full <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </details>
+
+  <a class="contact" href="mailto:alerobinson1982@gmail.com?subject=Label%20Lens%20Support">
+    Email support
+    <span>alerobinson1982@gmail.com</span>
+  </a>
+
+  <div class="nav">
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
+  </div>
+</div>
+</body>
+</html>
